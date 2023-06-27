@@ -10,7 +10,7 @@
         }
         static void PrintCards(List<Card> cards)
         {
-            foreach (Card card in cards) Console.WriteLine($"{card.Value} of {card.Suit}");
+            foreach (Card card in cards) Console.WriteLine(card);
         }
         static void Main(string[] args)
         {
@@ -25,7 +25,7 @@
                 }
                 PrintCards(cards);
                 cards.Sort(comparer);
-                Console.WriteLine("........Sorting the card........");
+                Console.WriteLine("\n........Sorting the card........\n");
                 PrintCards(cards);
             }
         }

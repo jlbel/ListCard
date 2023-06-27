@@ -19,5 +19,9 @@ namespace ListCard
         {
             get { return ($" {Value} of {Suit}"); }
         }
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
